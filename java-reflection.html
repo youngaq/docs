@@ -5,11 +5,11 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="None">
+  
   
   
   <link rel="shortcut icon" href="img/favicon.ico">
-  <title>我的文档</title>
+  <title>Java反射 - 我的文档</title>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700" />
 
   <link rel="stylesheet" href="css/theme.css" />
@@ -18,8 +18,8 @@
   
   <script>
     // Current page data
-    var mkdocs_page_name = "\u9996\u9875";
-    var mkdocs_page_input_path = "index.md";
+    var mkdocs_page_name = "Java\u53cd\u5c04";
+    var mkdocs_page_input_path = "java-reflection.md";
     var mkdocs_page_url = null;
   </script>
   
@@ -46,17 +46,17 @@
       </div>
 
       <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
-                <ul class="current">
-                    <li class="toctree-l1 current"><a class="reference internal current" href="index.html">首页</a>
-    <ul class="current">
-    </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="index.html">首页</a>
                     </li>
                 </ul>
                 <p class="caption"><span class="caption-text">Java</span></p>
-                <ul>
+                <ul class="current">
                     <li class="toctree-l1"><a class="reference internal" href="java-basics.html">Java基础</a>
                     </li>
-                    <li class="toctree-l1"><a class="reference internal" href="java-reflection.html">Java反射</a>
+                    <li class="toctree-l1 current"><a class="reference internal current" href="java-reflection.html">Java反射</a>
+    <ul class="current">
+    </ul>
                     </li>
                     <li class="toctree-l1"><a class="reference internal" href="StringBuffer-StringBuilder-diff.html">StringBuffer和StringBuilder区别</a>
                     </li>
@@ -86,8 +86,12 @@
     <li><a href="index.html">Docs</a> &raquo;</li>
     
       
+        
+          <li>Java &raquo;</li>
+        
+      
     
-    <li>首页</li>
+    <li>Java反射</li>
     <li class="wy-breadcrumbs-aside">
       
     </li>
@@ -99,9 +103,13 @@
           <div role="main">
             <div class="section">
               
-                <h1 id="_1">欢迎来到我的文档</h1>
-<pre><code>不积跬步,无以至千里.不积小流,无以成江海
-</code></pre>
+                <h1 id="java">Java反射</h1>
+<p>什么是反射:</p>
+<p>Java反射机制是在运行状态中，能够知道任何一个类的所有属性和方法；对于任何一个对象，都能够调用它的任意方法和属性；这种动态获取信息以及动态调用对象方法的功能称为java语言的反射机制。</p>
+<p>允许程序在运行时通过反射取得任何一个已知名称的class的内部信息，包括其modifiers（诸如public、static等）、superclass（例如Object）、实现之interfaces（例如Cloneable），也包括fields和methods的所有信息，并可于运行时改变fields内容或唤起methods。反射可以在运行时加载、探知、使用编译期间完全未知的classes。</p>
+<p>反射能做什么:</p>
+<p>反射（reflection）允许静态语言在运行时（runtime）检查、修改程序的结构与行为。</p>
+<p>可以利用反射技术实现反射实现动态代理，热加载。</p>
               
             </div>
           </div>
@@ -109,8 +117,10 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="java-basics.html" class="btn btn-neutral float-right" title="Java基础">Next <span class="icon icon-circle-arrow-right"></span></a>
+        <a href="StringBuffer-StringBuilder-diff.html" class="btn btn-neutral float-right" title="StringBuffer和StringBuilder区别">Next <span class="icon icon-circle-arrow-right"></span></a>
       
+      
+        <a href="java-basics.html" class="btn btn-neutral" title="Java基础"><span class="icon icon-circle-arrow-left"></span> Previous</a>
       
     </div>
   
@@ -136,8 +146,10 @@
   <span class="rst-current-version" data-toggle="rst-current-version">
     
     
+      <span><a href="java-basics.html" style="color: #fcfcfc">&laquo; Previous</a></span>
     
-      <span><a href="java-basics.html" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+      <span><a href="StringBuffer-StringBuilder-diff.html" style="color: #fcfcfc">Next &raquo;</a></span>
     
   </span>
 </div>
@@ -153,8 +165,3 @@
 
 </body>
 </html>
-
-<!--
-MkDocs version : 1.2.1
-Build Date UTC : 2021-07-06 10:38:33.916788+00:00
--->
