@@ -4,3 +4,4 @@ theme: readthedocs
 nav:
     - 首页: index.md
     - Java基础: java-basics.md
+    - Git基础: git-basics.md
