@@ -5,11 +5,11 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="None">
+  
   
   
   <link rel="shortcut icon" href="img/favicon.ico">
-  <title>我的文档</title>
+  <title>StringBuffer和StringBuilder区别 - 我的文档</title>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700" />
 
   <link rel="stylesheet" href="css/theme.css" />
@@ -18,8 +18,8 @@
   
   <script>
     // Current page data
-    var mkdocs_page_name = "\u9996\u9875";
-    var mkdocs_page_input_path = "index.md";
+    var mkdocs_page_name = "StringBuffer\u548cStringBuilder\u533a\u522b";
+    var mkdocs_page_input_path = "StringBuffer-StringBuilder-diff.md";
     var mkdocs_page_url = null;
   </script>
   
@@ -46,17 +46,17 @@
       </div>
 
       <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
-                <ul class="current">
-                    <li class="toctree-l1 current"><a class="reference internal current" href="index.html">首页</a>
-    <ul class="current">
-    </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="index.html">首页</a>
                     </li>
                 </ul>
                 <p class="caption"><span class="caption-text">Java</span></p>
-                <ul>
+                <ul class="current">
                     <li class="toctree-l1"><a class="reference internal" href="java-basics.html">Java基础</a>
                     </li>
-                    <li class="toctree-l1"><a class="reference internal" href="StringBuffer-StringBuilder-diff.html">StringBuffer和StringBuilder区别</a>
+                    <li class="toctree-l1 current"><a class="reference internal current" href="StringBuffer-StringBuilder-diff.html">StringBuffer和StringBuilder区别</a>
+    <ul class="current">
+    </ul>
                     </li>
                 </ul>
                 <p class="caption"><span class="caption-text">Git</span></p>
@@ -84,8 +84,12 @@
     <li><a href="index.html">Docs</a> &raquo;</li>
     
       
+        
+          <li>Java &raquo;</li>
+        
+      
     
-    <li>首页</li>
+    <li>StringBuffer和StringBuilder区别</li>
     <li class="wy-breadcrumbs-aside">
       
     </li>
@@ -97,9 +101,26 @@
           <div role="main">
             <div class="section">
               
-                <h1 id="_1">欢迎来到我的文档</h1>
-<pre><code>不积跬步,无以至千里.不积小流,无以成江海
-</code></pre>
+                <h1 id="stringbufferstringbuilder">StringBuffer和StringBuilder的区别</h1>
+<p>StringBuffer：</p>
+<p>StringBuffer 线程安全的可变字符序列。如果要频繁对字符串内容进行修改，出于效率考虑最好使用 StringBuffer。在任意时间点上它都包含某种特定的字符序列，但通过某些方法调用可以改变该序列的长度和内容。可将字符串缓冲区安全地用于多个线程。可以调用 StringBuffer 的 toString() 方法转成 String 类型。</p>
+<p>StringBuilder：</p>
+<p>StringBuilder 对象被当作是一个包含字符序列的变长数组。StringBuilder兼容StringBuffer的 API但不保证同步。该类被设计用作 StringBuffer 的一个简易替换，用于字符串缓冲区单线程场景。</p>
+<p>使用场景：</p>
+<ol>
+<li>
+<p>操作少量的数据用String ,单线程操作大量数据，多线程操作大量数据用StringBuffer。</p>
+</li>
+<li>
+<p>避免使用"+"来对字符串进行频繁的拼接，优先使用StringBuffer或StringBuilder类。</p>
+</li>
+<li>
+<p>在使用StringBuffer或StringBuilder时候最好能指定它们的容量。当不指定容量（capacity）时默认构造一个容量为16的对象。不指定容量会显著降低性能。</p>
+</li>
+<li>
+<p>StringBuilder 一般使用在方法内部来完成类似 + 功能，因为是线程不安全的，所以用完以后可以丢弃。StringBuffer 主要用于多线程场景。</p>
+</li>
+</ol>
               
             </div>
           </div>
@@ -107,8 +128,10 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="java-basics.html" class="btn btn-neutral float-right" title="Java基础">Next <span class="icon icon-circle-arrow-right"></span></a>
+        <a href="git-basics.html" class="btn btn-neutral float-right" title="Git基础">Next <span class="icon icon-circle-arrow-right"></span></a>
       
+      
+        <a href="java-basics.html" class="btn btn-neutral" title="Java基础"><span class="icon icon-circle-arrow-left"></span> Previous</a>
       
     </div>
   
@@ -134,8 +157,10 @@
   <span class="rst-current-version" data-toggle="rst-current-version">
     
     
+      <span><a href="java-basics.html" style="color: #fcfcfc">&laquo; Previous</a></span>
     
-      <span><a href="java-basics.html" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+      <span><a href="git-basics.html" style="color: #fcfcfc">Next &raquo;</a></span>
     
   </span>
 </div>
@@ -151,8 +176,3 @@
 
 </body>
 </html>
-
-<!--
-MkDocs version : 1.2.1
-Build Date UTC : 2021-07-06 10:03:44.575187+00:00
--->
