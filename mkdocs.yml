@@ -5,6 +5,7 @@ nav:
     - 首页: index.md
     - Java:
       - Java基础: java-basics.md
+      - Java反射: java-reflection.md
       - StringBuffer和StringBuilder区别: StringBuffer-StringBuilder-diff.md
     - Git:
       - Git基础: git-basics.md
