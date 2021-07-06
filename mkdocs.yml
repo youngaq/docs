@@ -3,4 +3,8 @@ theme: readthedocs
 
 nav:
     - 首页: index.md
-    - Java基础: java-basics.md
+    - Java:
+      - Java基础: java-basics.md
+      - StringBuffer和StringBuilder区别: StringBuffer-StringBuilder-diff.md
+    - Git:
+      - Git基础: git-basics.md
