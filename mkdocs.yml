@@ -1,5 +1,8 @@
 site_name: 我的文档
+site_url: https://hicaosen.github.io/docs/
 theme: readthedocs
+repo_name: hicaosen/docs
+repo_url: https://github.com/hicaosen/docs
 
 nav:
     - 首页: index.md
