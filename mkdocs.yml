@@ -6,6 +6,7 @@ repo_url: https://github.com/hicaosen/docs
 
 nav:
     - 首页: index.md
+    - 备忘录: todolist.md
     - Java:
       - Java基础: java-basics.md
       - Java反射: java-reflection.md
