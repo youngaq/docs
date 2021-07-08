@@ -5,11 +5,20 @@ repo_name: hicaosen/docs
 repo_url: https://github.com/hicaosen/docs
 
 nav:
-    - 首页: index.md
-    - 备忘录: todolist.md
-    - Java:
+  - 首页: index.md
+  - 备忘录: todolist.md
+  - Java:
       - Java基础: java-basics.md
       - Java反射: java-reflection.md
       - StringBuffer和StringBuilder区别: StringBuffer-StringBuilder-diff.md
-    - Git:
+  - Git:
       - Git基础: git-basics.md
+markdown_extensions:
+  - smarty:
+  - pymdownx.tilde:
+  - pymdownx.tasklist:
+  - pymdownx.mark:
+  - pymdownx.magiclink:
+  - pymdownx.caret:
+  - pymdownx.betterem:
+  - pymdownx.emoji:
